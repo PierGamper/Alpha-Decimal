@@ -1,0 +1,277 @@
+<!-- Style inspired and based on Jan-ne's site at https://jan-ne.github.io/ with its repository at https://github.com/jan-Ne/jan-ne.github.io -->
+
+<!DOCTYPE html>
+<html lang='en-gb' data-theme='light'>
+
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Alpha-Decimal</title>
+    <link rel='stylesheet' href='style.css' />
+    <link rel='icon' href='images/alphdec.png' />
+  </head>
+
+  <body>
+
+    <header>
+      <a href='index.html'> <img src='images/piergamper-logo.png' alt='The Atomic Baker'/> </a>
+      <h1>Alpha-Decimal Unit System</h1>
+      <img src='images/alphdec.png' alt='The Atomic Baker'/>
+    </header>
+    <div class='sub-header'>
+      <button id='toggle-theme'>Toggle Theme</button>
+    </div>
+
+    <script>
+      const toggleThemeBtn = document.querySelector('#toggle-theme');
+
+      toggleThemeBtn.addEventListener('click', function() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : currentTheme === 'dark' ? 'light': 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+      });
+    </script>
+
+    <div class='text-block'>
+      <h1> Introduction </h1>
+      <p>
+         The Alpha-Decimal system of units (abbreviated <i>'AlphDec'</i> ) is a coherent system of measurement with 7 base units from which others can be derived. Much like the SI (the International System of Units) AlphDec defines its base units in terms of fundamental physical constants to measure 7 different physical quantities. These base units are:
+      </p>
+
+      <ol>
+        <li>The vlef for measuring time, defined by the hyperfine transition frequency of caesium 133 (<i>&Delta;v<sub>Cs</sub></i>)</li>
+        <li>The mik for measuring length, defined by the speed of light in a vacuum (<i>c</i>)</li>
+        <li>The adra for measuring mass, defined by the reduced Plack constant (<i>&hbar;</i>)</li>
+        <li>The ilek for measuring electric current, defined by the elementary charge (<i>e<sub>char</sub></i>)</li>
+        <li>The zes for measuring thermodynamic temperature, defined by the Boltzmann constant (<i>k<sub>B</sub></i>)</li>
+        <li>The pos for measuring amount of substance, defined by the Avogadro constant (<i>N<sub>A</sub></i>)</li>
+        <li>The ker for measuring luminous intensity, defined by the luminous efficacy of 540 MHz radiation (<i>K<sub>cd</sub></i>)</li>
+      </ol>
+
+      <p>
+        This page contains the definition, development and explanation of the Alpha-Decimal system of measurement.
+      </p>
+
+      <h2>Motivation</h2>
+      <p>
+        AlphDec was first ideated as a thought experiment. A system branching from SI along with natural systems of measurement that <i>'normalises'</i> some physical constants to a value that is easy to work with.
+      </p>
+
+      <p>
+        Despite the many advantages and clever design of SI one could say it faces a problem similar to the Imperial System that preceded it. The Units are a bit outdated.
+      </p>
+
+      <p>
+        SI units were designed a long time ago and were suited for the needs of scientifics back then (in the 18th century), using common materials and known physical values to define the base units; for example, the metre was originaly defined using the circumference of the earth and the gram as the mass of one cubic centimetre of water. But now, the scientific community uses other values, mostly unknown (by today's standards) when the metric system was created.
+      </p>
+
+      <p>
+        Nowadays, it is better to define the units in terms of fundamental values that can be measured and derived anywhere on the universe; and while the SI did this in 2019 redefining the units, it kept their size as close as possible. As a consequence, the numeric values given to these constants the universe provides to us are rather akward. Look no further than the speed of light, <i>c</i>, a constant crucial to modern physics, set to be exactly 299 792 458 m/s.
+      </p>
+
+      <p>
+        Although niche, this very issue has resulted in other units created by scientist suited for their field, for example, the electronVolt. And going further, entire different systems, natural systems, such as the Planck units that normalise the speed of light, the reduced Planck constant and the gravitational constant (<i>G</i>) to be 1. This results in nice values at the cost of an impractical scale for everyday use.
+      </p>
+
+      <p>
+        But perhaps there is a middle ground where the units retain their convenient size while doing justice to the universal parameters that define them. With that goal in mind the Alpha-Decimal system was created.
+      </p>
+
+      <h2>Concept</h2>
+      <!-- combined table -->
+      <table>
+        <!-- generic, example -->
+        <tr class='head-row'>
+          <th>AlphDec unit</td>
+          <th>symbol</td>
+          <th>Quantity</td>
+          <td rowspan='3' class='image-cell'><img src='images/alphdec-quan-no.png'></td>
+        </tr>
+        <tr class='odd-row'>
+          <td>SI unit (symbol)</td>
+          <td colspan='2'>(approximated) conversion factor</td>
+        </tr>
+        <tr>
+          <td colspan='3'>
+            Definition
+          </td>
+        </tr>
+
+        <!-- yellow, time -->
+        <tr class='head-row yellow'>
+          <th>vlef</td>
+          <th>vl</td>
+          <th>Time</td>
+          <td rowspan='3' class='image-cell'><img src='images/alphdec-quan-t.png'></td>
+        </tr>
+        <tr class='odd-row yellow'>
+          <td>second (s)</td>
+          <td colspan='2'>1vl = 0.432 000 s</td>
+        </tr>
+        <tr class='yellow'>
+          <td colspan='3'>
+            Defined by taking the fixed numerical value of caesium frequency, ∆νCs, to be 3971217017 when expressed in terms of 1/vl
+          </td>
+        </tr>
+
+        <!-- copper, length -->
+        <tr class='head-row copper'>
+          <th>mik</td>
+          <th>mk</td>
+          <th>Length</td>
+          <td rowspan='3' class='image-cell'><img src='images/alphdec-quan-l.png'></td>
+        </tr>
+        <tr class='odd-row copper'>
+          <td>metre (m)</td>
+          <td colspan='2'>1mk = 1.295 103 m</td>
+        </tr>
+        <tr class='copper'>
+          <td colspan='3'>
+            Defined by taking the fixed numerical value of the speed of ligth in a vacuum, c, to be 10^8 when expressed in the unit mk/vl
+          </td>
+        </tr>
+
+        <!-- magenta, mass -->
+        <tr class='head-row magenta'>
+          <th>adra</td>
+          <th>dr</td>
+          <th>Mass</td>
+          <td rowspan='3' class='image-cell'><img src='images/alphdec-quan-m.png'></td>
+        </tr>
+        <tr class='odd-row magenta'>
+          <td>kilogram (kg)</td>
+          <td colspan='2'>1dr = 2.716 133 kg</td>
+        </tr>
+        <tr class='magenta'>
+          <td colspan='3'>
+            Defined by taking the fixed numerical value of the reduced Planck constant, ħ, to be 10^(-35) when expressed in terms of mk²×dr/vl
+          </td>
+        </tr>
+
+        <!-- purple, current -->
+        <tr class='head-row purple'>
+          <th>ilek</td>
+          <th>il</td>
+          <th>(I) electric current</td>
+          <td rowspan='3' class='image-cell'><img src='images/alphdec-quan-i.png'></td>
+        </tr>
+        <tr class='odd-row purple'>
+          <td>ampere (A)</td>
+          <td colspan='2'>1il = 0.370 874 A</td>
+        </tr>
+        <tr class='purple'>
+          <td colspan='3'>
+            Defined by taking the fixed numerical value of the elementary charge, e, to be 10^(-18) when expressed in terms of il×vl
+          </td>
+        </tr>
+
+        <!-- blue, temperature -->
+        <tr class='head-row blue'>
+          <th>zes</td>
+          <th>zs</td>
+          <th>(&Theta;) thermodynamic temperature</td>
+          <td rowspan='3' class='image-cell'><img src='images/alphdec-quan-theta.png'></td>
+        </tr>
+        <tr class='odd-row blue'>
+          <td>kelvin (K)</td>
+          <td colspan='2'>1zs = 0.176 811 K</td>
+        </tr>
+        <tr class='blue'>
+          <td colspan='3'>
+            Defined by taking the fixed numerical value of the Boltzmann constant, k_B, to be 10^(-25) when expressed in terms of mk²×dr/(vl²×zs)
+          </td>
+        </tr>
+
+        <!-- teal, ammount of matter -->
+        <tr class='head-row teal'>
+          <th>pos</td>
+          <th>ps</td>
+          <th>(N) ammount of substance</td>
+          <td rowspan='3' class='image-cell'><img src='images/alphdec-quan-n.png'></td>
+        </tr>
+        <tr class='odd-row teal'>
+          <td>mole (mol)</td>
+          <td colspan='2'>1ps = 1.660 539 mol</td>
+        </tr>
+        <tr class='teal'>
+          <td colspan='3'>
+            Defined by taking the fixed numerical value of the Avogadro constant, N_A, to be 10^24 when expressed in terms of 1/ps
+          </td>
+        </tr>
+
+        <!-- green, luminous intensity -->
+        <tr class='head-row green'>
+          <th>ker</td>
+          <th>kr</td>
+          <th>(J) luminous intensity</td>
+          <td rowspan='3' class='image-cell'><img src='images/alphdec-quan-j.png'></td>
+        </tr>
+        <tr class='odd-row green'>
+          <td>candela (cd)</td>
+          <td colspan='2'>1kr = 0.385 948 cd</td>
+        </tr>
+        <tr class='green'>
+          <td colspan='3'>
+            Defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 233.28*(10^12) 1/vl, K_cd, the frequency to wich the human eye is most sensitive to, to be 10^14 when expressed in terms of vl³×mk²×kr/ (mk⁴×dr)
+          </td>
+        </tr>
+
+      </table>
+
+      <p>
+        In AlphDec, all the defining constants have a value of a power of 10 (except &Delta;v<sub>Cs</sub>). This is achieved after defining the unit of time.
+      <p>
+
+      <h3>The <i>vlef</i></h3>
+      <p>
+        This unit is a bit different from the other 6. Technically it's set to the average solar day --the period in which the earth completes one rotation around its axis and the sun returns to its highest point in the sky (around 86400 seconds); In this case, one solar day is set to be (approximately) 200 000 vlef. This is achieved by defining one vlef (1 vl) in terms of the unperturbed ground-state hyperfine transition frequency of a caesium 133 atom (&Delta;v<sub>Cs</sub>), setting it to be 3 971 217 017 when expressed in therms of vl<sup>-1</sup>, making the vlef equivalent to roughly 0.432 000 seconds.
+      </p>
+
+      <p>
+        The advantage of a 20-hour clock is that it resembles more a sundial that expresses the angle of the sun in radians, like a protractor, if the day starts at sunrise and the clock turns counter-clockwise, then the clock-hand would keep track of the angle of the sun.
+      </p>
+
+      <p>
+        With the unit of time, now it's easier to define the units of length, mass, current, temperature and luminous intensity.
+      </p>
+
+      <h3>The <i>mik</i></h3>
+      <p>
+        The mik (mk) is the unit of length, its definition is much simpler. It sets the speed of light, <i>c</i>, to be exactly 10<sup>8</sup> when expressed in mk/ vl. The mik is roughly equal to 1.295 103 metres.
+      </p>
+
+      <h3>The <i>adra</i></h3>
+      <p>
+        The adra (dr) is the unit of mass. With it the reduced Planck constant, <i>&hbar;</i>, is set to be 10<sup>-35</sup> when expressed in mk<sup>2</sup>&times; dr/ vl. The adra is roughly equal to 2.716 133 Kilograms.
+      </p>
+
+      <h3>The <i>ilek</i></h3>
+      <p>
+        The ilek (il) is the unit of electric current. It is defined by setting the value of the elementary charge, e<sub>char</sub>, (the electric charge carried by a single proton) to be 10<sup>-18</sup> when expressed in vl&times; il. One ilek is roughly equal to 0.370 874 Amperes.
+      </p>
+
+      <h3>The <i>zes</i></h3>
+      <p>
+        The zes (zs) is the unit of thermodynamic temperature (atomic kinetic energy). It sets the value of the Boltzmann constant, k<sub>B</sub>, to be exactly 10<sup>-25</sup> when expressed in mk<sup>2</sup>&times; dr/(vl<sup>2</sup>&times; zs). One zes is roughly equal to 0.176 811 Kelvin.
+      </p>
+
+      <h3>The <i>pos</i></h3>
+      <p>
+        The pos (ps) is the unit for ammount of substance. It sets the Avogadro constant, N<sub>A</sub>, to be 10<sup>24</sup> when expressed in ps<sup>-1</sup>. One pos is roughly equal to 1.660 539 moles.
+      </p>
+
+      <h3>The <i>ker</i></h3>
+      <p>
+        The ker (kr) is the unit for luminous intensity in a given direction. It sets the luminous efficacy of monochromatic radiation of frequency 540&times; 10<sup>12</sup>Hz (the frequency of light to which the human eye is most sensitive to), K<sub>cd</sub>, to be 100 000 when expressed in vl<sup>3</sup>&times; mk<sup>2</sup>&times; kr/(mk<sup>4</sup>&times; dr). One ker is roughly equal to 0.385 948 candelas.
+      </p>
+
+      <hr />
+
+      <p>
+        Layout and style inspired by the <a href='https://metricsystem.net/'>metricsystem.net/</a> website
+      </p>
+
+    </div>
+
+  </body>
+</html>

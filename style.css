@@ -1,0 +1,229 @@
+/* Style inspired and based on Jan-ne's site at https://jan-ne.github.io/ with its repository at https://github.com/jan-Ne/jan-ne.github.io */
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* root */
+:root{
+  --primary-clr   : #359;
+  --secondary-clr : #c09;
+  --accent-clr    : #ff9;
+  --shade1-clr    : #138;
+  --shade2-clr    : #016;
+}
+
+:root[data-theme='light']{
+  --txt-clr: #000;
+  --bg1-clr: #ddc;
+  --bg2-clr: #fff;
+
+  --gry1: #eee;
+  --gry2: #ccc;
+  --gry3: #bbb;
+
+  --ylw1: #fea;
+  --ylw2: #fd6;
+  --ylw3: #fc5;
+
+  --cpr1: #fda;
+  --cpr2: #fb6;
+  --cpr3: #fa4;
+
+  --mgt1: #fdf;
+  --mgt2: #f9d;
+  --mgt3: #f7c;
+
+  --prl1: #dcf;
+  --prl2: #c8f;
+  --prl3: #b6f;
+
+  --blu1: #eef;
+  --blu2: #abf;
+  --blu3: #89f;
+
+  --tel1: #eff;
+  --tel2: #9ef;
+  --tel3: #7df;
+
+  --grn1: #efc;
+  --grn2: #cf9;
+  --grn3: #bf7;
+}
+
+:root[data-theme='dark']{
+  --txt-clr: #fff;
+  --bg1-clr: #223;
+  --bg2-clr: #000;
+
+  --gry1: #111;
+  --gry2: #444;
+  --gry3: #555;
+
+  --ylw1: #430;
+  --ylw2: #970;
+  --ylw3: #c90;
+
+  --cpr1: #210;
+  --cpr2: #820;
+  --cpr3: #a30;
+
+  --mgt1: #201;
+  --mgt2: #715;
+  --mgt3: #916;
+
+  --prl1: #213;
+  --prl2: #428;
+  --prl3: #52a;
+
+  --blu1: #012;
+  --blu2: #137;
+  --blu3: #149;
+
+  --tel1: #011;
+  --tel2: #066;
+  --tel3: #087;
+
+  --grn1: #120;
+  --grn2: #481;
+  --grn3: #5a1;
+}
+
+/* main */
+html{font-size: 100%;} /* 16px */
+
+body{
+  color: var(--txt-clr);
+  background-color: var(--bg1-clr);
+  margin: 0;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: 700;
+}
+
+h1{font-size: 1.990rem; /* 31.84px */}
+
+h2{font-size: 1.658rem; /* 26.56px */}
+
+h3{font-size: 1.382rem; /* 22.08px */}
+
+h4{font-size: 1.152rem; /* 18.40px */}
+
+h5{font-size: 0.960rem; /* 15.36px */}
+
+small{font-size: 0.667rem; /* 10.72px */}
+
+/* header */
+header{
+  background-color: var(--primary-clr);
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1vmin;
+}
+
+header img {height: 7vw;}
+
+header a {
+  text-decoration: none;
+  color: var(--txt-clr);
+  font-weight: bold;
+}
+
+header h1{
+  font-size: 3.3vw;
+  text-align: center;
+}
+
+div.sub-header{
+  background-color: var(--shade1-clr);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3vw;
+}
+
+button{
+  background-color: var(--shade1-clr);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: solid 2px var(--shade2-clr);
+}
+
+/* text-body */
+div.text-block{
+  width: 75rem;
+  max-width: 95vw;
+  margin: auto;
+  background-color: var(--bg2-clr);
+  padding: 1px 1vw;
+}
+
+/* generic table */
+table, tr, th, td{
+  border: none;
+  border-collapse: collapse;
+}
+
+table{
+  text-align: center;
+  width: 100%;
+  background-color: var(--gry1);
+  border: solid 2px var(--txt-clr);
+}
+
+tr.odd-row{background-color: var(--gry2);}
+
+tr.head-row{
+  border: solid var(--txt-clr);
+  border-width: 2px 0 1px 0;
+  background-color: var(--gry3);
+}
+
+td.image-cell{
+  width: 16vw;
+  max-width: 211.2px;
+  border: solid var(--txt-clr);
+  border-width: 2px 0 0 2px;
+}
+
+table img{width: 15vw; max-width: 192px;}
+
+/* coloured tables */
+
+.yellow{background-color: var(--ylw1);}
+tr.odd-row.yellow{background-color: var(--ylw2);}
+tr.head-row.yellow{background-color: var(--ylw3);}
+
+.copper{background-color: var(--cpr1);}
+tr.odd-row.copper{background-color: var(--cpr2);}
+tr.head-row.copper{background-color: var(--cpr3);}
+
+
+.magenta{background-color: var(--mgt1);}
+tr.odd-row.magenta{background-color: var(--mgt2);}
+tr.head-row.magenta{background-color: var(--mgt3);}
+
+.purple{background-color: var(--prl1);}
+tr.odd-row.purple{background-color: var(--prl2);}
+tr.head-row.purple{background-color: var(--prl3);}
+
+.blue{background-color: var(--blu1);}
+tr.odd-row.blue{background-color: var(--blu2);}
+tr.head-row.blue{background-color: var(--blu3);}
+
+.teal{background-color: var(--tel1);}
+tr.odd-row.teal{background-color: var(--tel2);}
+tr.head-row.teal{background-color: var(--tel3);}
+
+.green{background-color: var(--grn1);}
+tr.odd-row.green{background-color: var(--grn2);}
+tr.head-row.green{background-color: var(--grn3);}
