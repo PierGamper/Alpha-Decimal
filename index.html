@@ -1,5 +1,3 @@
-<!-- Style inspired and based on Jan-ne's site at https://jan-ne.github.io/ with its repository at https://github.com/jan-Ne/jan-ne.github.io -->
-
 <!DOCTYPE html>
 <html lang='en-gb' data-theme='light'>
 
@@ -9,6 +7,10 @@
     <title>Alpha-Decimal</title>
     <link rel='stylesheet' href='style.css' />
     <link rel='icon' href='images/alphdec.png' />
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+
+    </script>
   </head>
 
   <body>
@@ -110,7 +112,7 @@
         </tr>
         <tr class='yellow'>
           <td colspan='3'>
-            Defined by taking the fixed numerical value of caesium frequency, ∆νCs, to be 3971217017 when expressed in terms of 1/vl
+            Defined by taking the fixed numerical value of caesium frequency, &Delta;v<sub>Cs</sub>, to be 3 971 217 017 when expressed in terms of vl<sup>-1</sup>
           </td>
         </tr>
 
@@ -127,7 +129,7 @@
         </tr>
         <tr class='copper'>
           <td colspan='3'>
-            Defined by taking the fixed numerical value of the speed of ligth in a vacuum, c, to be 10^8 when expressed in the unit mk/vl
+            Defined by taking the fixed numerical value of the speed of ligth in a vacuum, c, to be 10<sup>8</sup> when expressed in the unit mk/ vl
           </td>
         </tr>
 
@@ -144,7 +146,7 @@
         </tr>
         <tr class='magenta'>
           <td colspan='3'>
-            Defined by taking the fixed numerical value of the reduced Planck constant, ħ, to be 10^(-35) when expressed in terms of mk²×dr/vl
+            Defined by taking the fixed numerical value of the reduced Planck constant, &hbar;, to be 10<sup>-35</sup> when expressed in terms of mk<sup>2</sup>&times; dr/ vl
           </td>
         </tr>
 
@@ -161,7 +163,7 @@
         </tr>
         <tr class='purple'>
           <td colspan='3'>
-            Defined by taking the fixed numerical value of the elementary charge, e, to be 10^(-18) when expressed in terms of il×vl
+            Defined by taking the fixed numerical value of the elementary charge, e<sub>char</sub>, to be 10<sup>-18</sup> when expressed in terms of il&times; vl
           </td>
         </tr>
 
@@ -178,7 +180,7 @@
         </tr>
         <tr class='blue'>
           <td colspan='3'>
-            Defined by taking the fixed numerical value of the Boltzmann constant, k_B, to be 10^(-25) when expressed in terms of mk²×dr/(vl²×zs)
+            Defined by taking the fixed numerical value of the Boltzmann constant, k<sub>B</sub>, to be 10<sup>-25</sup> when expressed in terms of mk<sup>2</sup>&times; dr/(vl<sup>2</sup>&times; zs)
           </td>
         </tr>
 
@@ -195,7 +197,7 @@
         </tr>
         <tr class='teal'>
           <td colspan='3'>
-            Defined by taking the fixed numerical value of the Avogadro constant, N_A, to be 10^24 when expressed in terms of 1/ps
+            Defined by taking the fixed numerical value of the Avogadro constant, N<sub>A</sub>, to be 10<sup>24</sup> when expressed in terms of ps<sup>-1</sup>
           </td>
         </tr>
 
@@ -212,11 +214,12 @@
         </tr>
         <tr class='green'>
           <td colspan='3'>
-            Defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 233.28*(10^12) 1/vl, K_cd, the frequency to wich the human eye is most sensitive to, to be 10^14 when expressed in terms of vl³×mk²×kr/ (mk⁴×dr)
+            Defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 233.28&times; 10<sup>12</sup> vl<sup>-1</sup>, K<sub>cd</sub> (the frequency of light to which the human eye is most sensitive to), to be 10<sup>14</sup> when expressed in terms of vl<sup>3</sup>&times; mk<sup>2</sup>&times; kr/(mk<sup>4</sup>&times; dr)
           </td>
         </tr>
-
       </table>
+
+      <hr />
 
       <p>
         In AlphDec, all the defining constants have a value of a power of 10 (except &Delta;v<sub>Cs</sub>). This is achieved after defining the unit of time.
@@ -224,7 +227,18 @@
 
       <h3>The <i>vlef</i></h3>
       <p>
-        This unit is a bit different from the other 6. Technically it's set to the average solar day --the period in which the earth completes one rotation around its axis and the sun returns to its highest point in the sky (around 86400 seconds); In this case, one solar day is set to be (approximately) 200 000 vlef. This is achieved by defining one vlef (1 vl) in terms of the unperturbed ground-state hyperfine transition frequency of a caesium 133 atom (&Delta;v<sub>Cs</sub>), setting it to be 3 971 217 017 when expressed in therms of vl<sup>-1</sup>, making the vlef equivalent to roughly 0.432 000 seconds.
+        This unit is a bit different from the other 6. Technically it's set to the average solar day --the period in which the earth completes one rotation around its axis and the sun returns to its highest point in the sky (around 86400 seconds); In this case, one solar day is set to be (approximately) 200 000 vlef. This is achieved by defining one vlef (1 vl) in terms of the unperturbed ground-state hyperfine transition frequency of a caesium 133 atom (&Delta;v<sub>Cs</sub>), setting it to be 3 971 217 017 when expressed in therms of vl<sup>-1</sup>.
+      </p>
+
+      <p>
+        In terms of &Delta;v<sub>Cs</sub> the vlef would be defined as such:
+        \[1vl = {3971217017 \over \Delta v_{Cs}}.\]
+      </p>
+
+      <p>
+        making the vlef equivalent to roughly 0.432 seconds
+        \[1s = {9192631770 \over \Delta v_{Cs}} \therefore \Delta v_{Cs} = {1vl \over 3971217017} = {1s \over 9192631770} \therefore 1vl = {3971217017 \over 9192631770} s\]
+        \[1vl \approx 0.432 s\]
       </p>
 
       <p>
@@ -237,22 +251,34 @@
 
       <h3>The <i>mik</i></h3>
       <p>
-        The mik (mk) is the unit of length, its definition is much simpler. It sets the speed of light, <i>c</i>, to be exactly 10<sup>8</sup> when expressed in mk/ vl. The mik is roughly equal to 1.295 103 metres.
+        The mik (mk) is the unit of length, its definition is much simpler. It sets the speed of light, <i>c</i>, to be exactly 10<sup>8</sup> (100 000 000) when expressed in mk/ vl. The mik is roughly equal to 1.295 103 metres.
+      </p>
+
+      <p>
+        \[1mk = {c \over 10^8} vl = {3971217017 \over 100000000}{c \over \Delta v_{Cs}}
+        \approx 39.712 17 {c \over \Delta v_{Cs}}.\]
       </p>
 
       <h3>The <i>adra</i></h3>
       <p>
-        The adra (dr) is the unit of mass. With it the reduced Planck constant, <i>&hbar;</i>, is set to be 10<sup>-35</sup> when expressed in mk<sup>2</sup>&times; dr/ vl. The adra is roughly equal to 2.716 133 Kilograms.
+        The adra (dr) is the unit of mass. With it the reduced Planck constant, <i>&hbar;</i>, is set to be 10<sup>-35</sup> when expressed in mk<sup>2</sup>&times; dr/ vl. The adra is roughly equal to 2.716 133 kilograms.
+      </p>
+
+      <p>
+        \[1dr = {\hbar \over 10^{-35}} m^{-2} s\]
+        \[1dr = {(10^8)^2 \over 10^{-35}(3971217017)} {\hbar \Delta v_{Cs} \over c^2} = {10^{51} \over 3971217017} {\hbar \Delta v_{Cs} \over c^2} \approx 2.518 12 \times 10^{41} {\hbar \Delta v_{Cs} \over c^2}.\]
       </p>
 
       <h3>The <i>ilek</i></h3>
       <p>
-        The ilek (il) is the unit of electric current. It is defined by setting the value of the elementary charge, e<sub>char</sub>, (the electric charge carried by a single proton) to be 10<sup>-18</sup> when expressed in vl&times; il. One ilek is roughly equal to 0.370 874 Amperes.
+        The ilek (il) is the unit of electric current. It is defined by setting the value of the elementary charge, e<sub>char</sub>, (the electric charge carried by a single proton) to be 10<sup>-18</sup> when expressed in vl&times; il. One ilek is roughly equal to 0.370 874 amperes.
       </p>
+
+      <p></p>
 
       <h3>The <i>zes</i></h3>
       <p>
-        The zes (zs) is the unit of thermodynamic temperature (atomic kinetic energy). It sets the value of the Boltzmann constant, k<sub>B</sub>, to be exactly 10<sup>-25</sup> when expressed in mk<sup>2</sup>&times; dr/(vl<sup>2</sup>&times; zs). One zes is roughly equal to 0.176 811 Kelvin.
+        The zes (zs) is the unit of thermodynamic temperature (atomic kinetic energy). It sets the value of the Boltzmann constant, k<sub>B</sub>, to be exactly 10<sup>-25</sup> when expressed in mk<sup>2</sup>&times; dr/(vl<sup>2</sup>&times; zs). One zes is roughly equal to 0.176 811 kelvin.
       </p>
 
       <h3>The <i>pos</i></h3>
@@ -260,7 +286,7 @@
         The pos (ps) is the unit for ammount of substance. It sets the Avogadro constant, N<sub>A</sub>, to be 10<sup>24</sup> when expressed in ps<sup>-1</sup>. One pos is roughly equal to 1.660 539 moles.
       </p>
 
-      <h3>The <i>ker</i></h3>
+      <h3>7. The <i>ker</i></h3>
       <p>
         The ker (kr) is the unit for luminous intensity in a given direction. It sets the luminous efficacy of monochromatic radiation of frequency 540&times; 10<sup>12</sup>Hz (the frequency of light to which the human eye is most sensitive to), K<sub>cd</sub>, to be 100 000 when expressed in vl<sup>3</sup>&times; mk<sup>2</sup>&times; kr/(mk<sup>4</sup>&times; dr). One ker is roughly equal to 0.385 948 candelas.
       </p>
