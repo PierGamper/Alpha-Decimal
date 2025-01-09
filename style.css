@@ -229,10 +229,14 @@ tr.head-row.teal{background-color: var(--tel3);}
 tr.odd-row.green{background-color: var(--grn2);}
 tr.head-row.green{background-color: var(--grn3);}
 
-
 /* equations */
 p.equation{
- font-size: 0.8rem;
- display: block;
- overflow: auto;
+  display: block;
+  overflow: auto;
+}
+
+@media (max-width: 676px){
+  p.equation{
+    font-size: 3.4vw;
+  }
 }
