@@ -142,7 +142,9 @@ header h1{
 
 div.sub-header{
   background-color: var(--shade1-clr);
+  position: -webkit-sticky;
   position: sticky;
+  z-index: 3;
   top: 0;
   display: flex;
   justify-content: space-around;
@@ -198,7 +200,6 @@ td.image-cell{
 table img{width: 15vw; max-width: 192px;}
 
 /* coloured tables */
-
 .yellow{background-color: var(--ylw1);}
 tr.odd-row.yellow{background-color: var(--ylw2);}
 tr.head-row.yellow{background-color: var(--ylw3);}
@@ -227,3 +228,11 @@ tr.head-row.teal{background-color: var(--tel3);}
 .green{background-color: var(--grn1);}
 tr.odd-row.green{background-color: var(--grn2);}
 tr.head-row.green{background-color: var(--grn3);}
+
+
+/* equations */
+p.equation{
+ font-size: 0.8rem;
+ display: block;
+ overflow: auto;
+}
