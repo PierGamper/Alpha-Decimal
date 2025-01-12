@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en-gb' data-theme='light'>
+<html lang='en-gb' data-theme='dark'>
 
   <head>
     <meta charset='UTF-8' />
@@ -79,7 +79,7 @@
         But perhaps there is a middle ground where the units retain their convenient size while doing justice to the universal parameters that define them. With that goal in mind the Alpha-Decimal system was created.
       </p>
 
-<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!--    ++++++++++++++++++++++++++++++++++++++++++++++++     -->
 
       <h2>Concept</h2>
       <!-- combined table -->
@@ -223,7 +223,7 @@
 
       <hr />
 
-<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!--    ++++++++++++++++++++++++++++++++++++++++++++++++     -->
 
       <p>
         In AlphDec, all the defining constants have a value of a power of 10 (except &Delta;v<sub>Cs</sub>). This is achieved after defining the unit of time.
@@ -254,7 +254,7 @@
           \Delta v_{Cs} = \frac{1 vl}{3971217017} = \frac{1 s}{9192631770}
         \]
         \[
-          1vl = \left(\frac{3971217017}{9192631770}\right)s \approx 0.432 s.
+          1vl = \left(\frac{3971217017}{9192631770}\right)s \approx 0.4320\,0001\,0047\,12\; s.
         \]
       </p>
 
@@ -273,10 +273,10 @@
 
       <p class='equation'>
         \[
-          1mk = \left(\frac{c}{10^8} \right) vl = \frac{3971217017}{100000000} \frac{c}{\Delta v_{Cs}}
+          1mk = \left(\frac{c}{10^8} \right) vl = 3971217017 \times 10^{-8} \frac{c}{\Delta v_{Cs}}
         \]
         \[
-          1mk \approx 39.71217 \frac{c}{\Delta v_{Cs}}.
+          1mk = 39.7121\,7017\; \frac{c}{\Delta v_{Cs}}.
         \]
       </p>
 
@@ -289,13 +289,13 @@
           1m = \frac{9192631770}{299792458} \frac{c}{\Delta v_{Cs}}
         \]
         \[
-          \frac{c}{\Delta v_{Cs}} = \left(\frac{299792458}{9192631770} \right) m = \left(\frac{c}{3971217017} \right) mk
+          \frac{c}{\Delta v_{Cs}} = \left(\frac{10^8}{3971217017} \right) mk = \left(\frac{299792458}{9192631770} \right) m
         \]
         \[
-          1mk = \left(10^{-8} \times \frac{3971217017(299792458)}{9192631770} \right) m
+          1mk = \left(\frac{3971217017 \times 299792458}{9192631770} \right) \times 10^{-8} m
         \]
         \[
-          1mk \approx 1.295121 m.
+          1mk \approx 1.2951\,0344\,8680\,68\; m.
         \]
       </p>
 
@@ -309,20 +309,66 @@
           1 dr = \left(\frac{\hbar}{10^{-35}} \right) s\ m^{-2} = \hbar \times 10^{35} s\ m^{-2}
         \]
         \[
-          1dr = \frac{10^{51}}{3971217017} \frac{\hbar \Delta v_{Cs}}{c^2} \approx 2.51812 \times 10^{41} \frac{\hbar \Delta v_{Cs}}{c^2}.
+          1dr = \frac{10^{51}}{3971217017} \frac{\Delta v_{Cs}\ \hbar}{c^2} \approx 2.5181\,1975 \times 10^{41} \frac{\Delta v_{Cs}\ \hbar}{c^2}.
         \]
       </p>
 
       <p>
-        The adra is roughly equal to 2.716 133 kilograms.
+        The adra is roughly equal to 2.716 kilograms.
+      </p>
+
+      <p class='equation'>
+        \[
+          1 kg = \frac{2 \pi (299792458)^2}{(6.62607015 \times 10^{-34})(9192631770)} \frac{\Delta v_{Cs}\ \hbar}{c^2}
+        \]
+        \[
+          \frac{\Delta v_{Cs}\ \hbar}{c^2} = \left(\frac{3971217017}{10^{51}} \right)dr = \left (\frac{(6.62607015 \times 10^{-34})(9192631770)}{2 \pi (299792458)^2} \right) kg
+        \]
+        \[
+          1 dr = \frac{6.62607015(9192631770)}{2 \pi (299792458)^2 \times 3971217017} \times 10^{17}kg
+        \]
+      </p>
+      <p class='equation'>
+        \[
+          1 dr \approx 2.7161\,3278\,8720\,13\; kg.
+        \]
       </p>
 
       <h3>The <i>ilek</i></h3>
       <p>
-        The ilek (il) is the unit of electric current. It is defined by setting the value of the elementary charge, e<sub>char</sub>, (the electric charge carried by a single proton) to be 10<sup>-18</sup> when expressed in vl&times; il. One ilek is roughly equal to 0.370 874 amperes.
+        The ilek (il) is the unit of electric current. It is defined by setting the value of the elementary charge, e<sub>char</sub>, (the electric charge carried by a single proton) to be 10<sup>-18</sup> when expressed in vl&times; il.
       </p>
 
-      <p></p>
+      <p class='equation'>
+        \[
+          1 il = \left(\frac{e_{char}}{10^{-18}} \right)vl^{-1} = e_{char} \times 10^{18} vl^{-1}
+        \]
+        \[
+          1 il = \frac{10^{18}}{3971217017} \Delta v_{Cs}\ e_{char} \approx 2.5181\,1975 \times 10^8 \Delta v_{Cs}\ e_{char}.
+        \]
+      </p>
+
+      <p>
+        One ilek is roughly equal to 0.371 amperes.
+      </p>
+
+      <p class='equation'>
+        \[
+          1 A = \frac{1}{(9192631770)(1.602176634 \times 10^{-19})} \Delta v_{Cs}\ e_{char}
+        \]
+        \[
+          \Delta v_{Cs}\ e_{char} = 3971217017 \times 10^{-18} il = (9192631770 \times 1.602176634) \times 10^{-19}A
+        \]
+        \[
+          1 il = \left(\frac{9192631770 \times 1.602176634}{3971217017} \right) \times 10^{-1} A
+        \]
+      </p>
+
+      <p class='equation'>
+        \[
+          1 il \approx 0.3708\,7421\,2207\,78\; A.
+        \]
+      </p>
 
       <h3>The <i>zes</i></h3>
       <p>
