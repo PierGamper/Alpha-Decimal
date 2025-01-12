@@ -19,35 +19,35 @@
 
   --gry1: #eee;
   --gry2: #ccc;
-  --gry3: #bbb;
+  --gry3: #aaa;
 
-  --ylw1: #fea;
-  --ylw2: #fd6;
-  --ylw3: #fc5;
+  --ylw1: #fdc;
+  --ylw2: #fa7;
+  --ylw3: #fb7;
 
-  --cpr1: #fda;
-  --cpr2: #fb6;
-  --cpr3: #fa4;
+  --cpr1: #fde;
+  --cpr2: #f9b;
+  --cpr3: #f7a;
 
-  --mgt1: #fdf;
-  --mgt2: #f9d;
-  --mgt3: #f7c;
+  --mgt1: #ecf;
+  --mgt2: #daf;
+  --mgt3: #c7e;
 
-  --prl1: #dcf;
-  --prl2: #c8f;
-  --prl3: #b6f;
+  --prl1: #cdf;
+  --prl2: #abf;
+  --prl3: #89f;
 
-  --blu1: #eef;
-  --blu2: #abf;
-  --blu3: #89f;
+  --blu1: #aff;
+  --blu2: #6ee;
+  --blu3: #2ee;
 
-  --tel1: #eff;
-  --tel2: #9ef;
-  --tel3: #7df;
+  --tel1: #cfc;
+  --tel2: #6f7;
+  --tel3: #3e5;
 
-  --grn1: #efc;
-  --grn2: #cf9;
-  --grn3: #bf7;
+  --grn1: #cf9;
+  --grn2: #bd5;
+  --grn3: #9c0;
 }
 
 :root[data-theme='dark']{
@@ -57,35 +57,35 @@
 
   --gry1: #111;
   --gry2: #444;
-  --gry3: #555;
+  --gry3: #666;
 
-  --ylw1: #430;
-  --ylw2: #970;
-  --ylw3: #c90;
+  --ylw1: #300;
+  --ylw2: #631;
+  --ylw3: #b51;
 
-  --cpr1: #210;
-  --cpr2: #820;
-  --cpr3: #a30;
+  --cpr1: #301;
+  --cpr2: #914;
+  --cpr3: #e27;
 
-  --mgt1: #201;
-  --mgt2: #715;
-  --mgt3: #916;
+  --mgt1: #203;
+  --mgt2: #618;
+  --mgt3: #a2e;
 
-  --prl1: #213;
-  --prl2: #428;
-  --prl3: #52a;
+  --prl1: #113;
+  --prl2: #23b;
+  --prl3: #35f;
 
-  --blu1: #012;
-  --blu2: #137;
-  --blu3: #149;
+  --blu1: #022;
+  --blu2: #055;
+  --blu3: #099;
 
-  --tel1: #011;
-  --tel2: #066;
-  --tel3: #087;
+  --tel1: #020;
+  --tel2: #152;
+  --tel3: #0a3;
 
   --grn1: #120;
-  --grn2: #481;
-  --grn3: #5a1;
+  --grn2: #340;
+  --grn3: #581;
 }
 
 /* main */
