@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en-gb' data-theme='light'>
+<html lang='en-gb' data-theme='dark'>
 
   <head>
     <meta charset='UTF-8' />
@@ -16,9 +16,9 @@
   <body>
 
     <header>
-      <a href='index.html'> <img src='images/piergamper-logo.png' alt='The Atomic Baker'/> </a>
+      <a href='index.html'> <img src='images/piergamper-logo.png'/> </a>
       <h1>Alpha-Decimal Unit System</h1>
-      <img src='images/alphdec.png' alt='The Atomic Baker'/>
+      <img src='images/alphdec.png'/>
     </header>
     <div class='sub-header'>
       <button id='toggle-theme'>Toggle Theme</button>
@@ -446,17 +446,29 @@
           1 kr = \left(\frac{K_{cd}}{10^5} \right) vl^{-3}\ mk^2\ dr\ st^{-1}
         \]
         \[
-          1 kr = \frac{10^{30}}{3971217017^2} (\Delta v_{Cs})^2\ \hbar\ K_{cd} \approx 6.3409\,2707\; (\Delta v_{Cs})^2\ \hbar\ K_{cd}.
+          1 kr = \frac{10^{30}}{3971217017^2} (\Delta v_{Cs})^2\ \hbar\ K_{cd} \approx 6.3409\,2707 \times 10^{10} (\Delta v_{Cs})^2\ \hbar\ K_{cd}.
         \]
       </p>
 
       <p>
-         One ker is roughly equal to 0.385 948 candelas.
+         One ker is roughly equal to 0.386 candelas.
       </p>
 
       <p class='equation'>
         \[
-          1 cd = \left(\frac{1}{(9192631770)^2(6.62607015 \times 10^{-34})683} \right)
+          1 cd = \left(\frac{2 \pi}{(9192631770)^2(6.62607015 \times 10^{-34})683} \right) (\Delta v_{Cs})^2\ \hbar\ K_{cd}
+        \]
+        \[
+          (\Delta v_{Cs})^2\ \hbar K_{cd} = \left(\frac{3971217017^2}{10^{30}} \right) kr = \left(\frac{(9192631770)^2 6.62607015 \times 10^{-34} \times 683}{2 \pi} \right) cd
+        \]
+        \[
+          1 kr = \left(\frac{(9192631770)^2 6.62607015 \times 683}{2 \pi (3971217017)^2} \right) \times 10^{-4} cd
+        \]
+      </p>
+
+      <p>
+        \[
+          1 kr \approx 0.3859\,4849\,4271\,40\; cd.
         \]
       </p>
 
